@@ -2,7 +2,7 @@
 
 *A mostly reasonable approach to CSS and Sass*
 
-This styleguide is based off of the Airbnb CSSThis styleguide is based off of the Airbnb Javascript Style Guide. It has been updated to fit the standards of Nerium International. Style Guide. It has been updated to fit the standards of Nerium International.
+This styleguide is based off of the Airbnb CSS Style Guide. It has been updated to fit the standards of Nerium International.  
 
 ## Table of Contents
 
