@@ -58,8 +58,8 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ```css
 /* some selector */ {
-  background: #f1f1f1;
-  color: #333;
+    background: #f1f1f1;
+    color: #333;
 }
 ```
 
@@ -87,7 +87,7 @@ Finally, properties are what give the selected elements of a rule declaration th
     // ...
 }
 #lol-no {
-  // ...
+    // ...
 }
 ```
 
@@ -247,7 +247,7 @@ Use `0` instead of `none` to specify that a style has no border.
         @include transition(background 0.5s ease);
 
         .icon {
-          margin-right: 10px;
+            margin-right: 10px;
         }
     }
     ```
