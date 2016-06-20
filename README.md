@@ -1,6 +1,8 @@
-# Airbnb CSS / Sass Styleguide
+# Nerium International CSS / Sass Styleguide
 
 *A mostly reasonable approach to CSS and Sass*
+
+This styleguide is based off of the Airbnb CSSThis styleguide is based off of the Airbnb Javascript Style Guide. It has been updated to fit the standards of Nerium International. Style Guide. It has been updated to fit the standards of Nerium International.
 
 ## Table of Contents
 
@@ -22,7 +24,6 @@
     - [Mixins](#mixins)
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
-  1. [Translation](#translation)
 
 ## Terminology
 
@@ -32,8 +33,8 @@ A “rule declaration” is the name given to a selector (or a group of selector
 
 ```css
 .listing {
-  font-size: 18px;
-  line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.2;
 }
 ```
 
@@ -43,11 +44,11 @@ In a rule declaration, “selectors” are the bits that determine which element
 
 ```css
 .my-element-class {
-  /* ... */
+    /* ... */
 }
 
 [aria-hidden] {
-  /* ... */
+    /* ... */
 }
 ```
 
@@ -66,7 +67,7 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ### Formatting
 
-* Use soft tabs (2 spaces) for indentation
+* Use soft tabs (4 spaces) for indentation
 * Prefer dashes over camelCasing in class names.
   - Underscores and PascalCasing are okay if you are using BEM (see [OOCSS and BEM](#oocss-and-bem) below).
 * Do not use ID selectors
@@ -94,14 +95,14 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ```css
 .avatar {
-  border-radius: 50%;
-  border: 2px solid white;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .one,
 .selector,
 .per-line {
-  // ...
+    // ...
 }
 ```
 
@@ -189,7 +190,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: none;
+    border: none;
 }
 ```
 
@@ -197,7 +198,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: 0;
+    border: 0;
 }
 ```
 
@@ -216,9 +217,9 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn-green {
-      background: green;
-      font-weight: bold;
-      // ...
+        background: green;
+        font-weight: bold;
+        // ...
     }
     ```
 
@@ -228,10 +229,10 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn-green {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-      // ...
+        background: green;
+        font-weight: bold;
+        @include transition(background 0.5s ease);
+        // ...
     }
     ```
 
@@ -241,13 +242,13 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
+        background: green;
+        font-weight: bold;
+        @include transition(background 0.5s ease);
 
-      .icon {
-        margin-right: 10px;
-      }
+        .icon {
+          margin-right: 10px;
+        }
     }
     ```
 
@@ -269,11 +270,11 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 
 ```scss
 .page-container {
-  .content {
-    .profile {
-      // STOP!
+    .content {
+      .profile {
+        // STOP!
+      }
     }
-  }
 }
 ```
 
@@ -287,13 +288,3 @@ When selectors become this long, you're likely writing CSS that is:
 Again: **never nest ID selectors!**
 
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
-
-## Translation
-
-  This style guide is also available in other languages:
-
-  - ![cn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/China.png) **Chinese (Simplified)**: [Zhangjd/css-style-guide](https://github.com/Zhangjd/css-style-guide)
-  - ![ru](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Russia.png) **Russian**: [Nekorsis/css-style-guide](https://github.com/Nekorsis/css-style-guide)
-  - ![ja](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Japan.png) **Japanese**: [nao215/css-style-guide](https://github.com/nao215/css-style-guide)
-  - ![es](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Spain.png) **Spanish**: [ismamz/guia-de-estilo-css](https://github.com/ismamz/guia-de-estilo-css)
-  - ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) **Portuguese**: [felipevolpatto/css-style-guide](https://github.com/felipevolpatto/css-style-guide)
